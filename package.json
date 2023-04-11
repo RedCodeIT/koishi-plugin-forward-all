@@ -1,0 +1,51 @@
+{
+  "name": "koishi-plugin-forword-all",
+  "description": "Forward all messages",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "author": "W0FV1 <wofbi1@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "scripts": {
+    "build": "atsc -b"
+  },
+  "koishi": {
+    "browser": true,
+    "description": {
+      "en": "Forward all messages",
+      "zh": "转发所有消息"
+    }
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "forward"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "@types/ws": "^8.5.4",
+    "atsc": "^1.1.2",
+    "koishi": "^4.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
