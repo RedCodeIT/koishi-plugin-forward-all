@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-forword-all",
   "description": "Forward all messages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -12,20 +12,20 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "git+https://github.com/RedCodeIT/koishi-plugin-forword-all.git"
   },
   "bugs": {
-    "url": "https://github.com/"
+    "url": "https://github.com/RedCodeIT/koishi-plugin-forword-all/issues"
   },
-  "homepage": "https://github.com/",
+  "homepage": "https://github.com/RedCodeIT/koishi-plugin-forword-all",
   "scripts": {
     "build": "atsc -b"
   },
   "koishi": {
     "browser": true,
     "description": {
-      "en": "Forward all messages",
-      "zh": "转发所有消息"
+      "en": "Forward all messages by websocket",
+      "zh": "使用websocket转发所有消息"
     }
   },
   "keywords": [
@@ -33,7 +33,8 @@
     "chatbot",
     "koishi",
     "plugin",
-    "forward"
+    "forward",
+    "websocket"
   ],
   "peerDependencies": {
     "koishi": "^4.8.4"
