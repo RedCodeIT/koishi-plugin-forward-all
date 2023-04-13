@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-forward-all",
   "description": "Forward all messages",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
