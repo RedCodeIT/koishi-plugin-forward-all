@@ -12,12 +12,12 @@ export interface Config {
   port: number
 }
 export const Config: Schema<Config> = Schema.object({
-  enable: Schema.boolean().default(false).description(descriptions.enable),
+  enable: Schema.boolean().default(true).description(descriptions.enable),
   port: Schema.number().default(9388).description(descriptions.port),
 })
 
 
-export default (ctx: Context, config: Config): void => {
+export function apply(ctx: Context, config: Config) {
   if (!config.enable){
     console.log('WebSocket server is disabled.');
     return;
