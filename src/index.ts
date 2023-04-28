@@ -36,14 +36,20 @@ export function apply(ctx: Context, config: Config) {
     });
   });
 
-  ctx.middleware(async (meta, next) => {
+  
+
+  ctx.on('guild-added', async (session) => {
+    sendMessage(session);
+  })
+
+  ctx.middleware(async (session) => {
+    sendMessage(session);
+  });
+  function sendMessage(message: object) {
     server.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
-
-        client.send(JSON.stringify(meta));
+        client.send(JSON.stringify(message));
       }
     });
-
-    return next();
-  });
+  }
 };
