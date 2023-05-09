@@ -18,11 +18,11 @@ export const Config: Schema<Config> = Schema.object({
 
 
 export function apply(ctx: Context, config: Config) {
-  if (!config.enable){
+  if (!config.enable) {
     console.log('WebSocket server is disabled.');
     return;
   }
-  const server = new WebSocket.Server({ port: config.port});
+  const server = new WebSocket.Server({ port: config.port });
   console.log(`WebSocket server listening on port ${config.port}.`);
   server.on('connection', (socket) => {
     console.log('WebSocket client connected.');
@@ -39,6 +39,11 @@ export function apply(ctx: Context, config: Config) {
   
 
   ctx.on('guild-added', async (session) => {
+    sendMessage(session);
+  })
+
+
+  ctx.on('friend-added', async (session) => {
     sendMessage(session);
   })
 
