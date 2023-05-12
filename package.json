@@ -46,5 +46,8 @@
     "atsc": "^1.1.2",
     "koishi": "^4.9.1",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
   }
 }
