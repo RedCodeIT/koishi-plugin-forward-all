@@ -12,12 +12,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedCodeIT/koishi-plugin-forword-all.git"
+    "url": "git+https://github.com/RedCodeIT/koishi-plugin-forward-all.git"
   },
   "bugs": {
-    "url": "https://github.com/RedCodeIT/koishi-plugin-forword-all/issues"
+    "url": "https://github.com/RedCodeIT/koishi-plugin-forward-all/issues"
   },
-  "homepage": "https://github.com/RedCodeIT/koishi-plugin-forword-all",
+  "homepage": "https://github.com/RedCodeIT/koishi-plugin-forward-all",
   "scripts": {
     "build": "atsc -b"
   },
